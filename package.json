@@ -10,7 +10,7 @@
     "db:gen": "drizzle-kit generate",
     "db:mig": "drizzle-kit migrate",
 
-    "build": "cd fe && pnpm run build && cd .. && tsc",
+    "build": "cd fe && pnpm install && pnpm run build && cd .. && pnpm install && tsc",
     "start": "node dist/server.js"
   },
   "keywords": [],
